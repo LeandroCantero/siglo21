@@ -1,0 +1,22 @@
+1. Gestión de Libros:
+    Agregar Libros:
+        Validación: Se verifica que la información del libro a agregar no sea nula y que el libro no exista previamente en la biblioteca.
+
+    Eliminar Libros:
+        Validación: Se asegura de que el libro a eliminar exista en el catálogo antes de proceder con la eliminación.
+
+2. Gestión de Usuarios:
+
+    Registro de Usuarios:
+        Validación: Se comprueba que los datos del usuario (correo electrónico, ID) no estén duplicados antes de agregarlos a la lista de usuarios.
+
+    Alquiler de Libros:
+        Validación: Se asegura de que el libro esté disponible antes de permitir que un usuario lo alquile.
+
+    Devolución de Libros:
+        Validación: Verifica que el libro esté en la lista de libros alquilados por el usuario antes de procesar la devolución.
+
+3. Consultas y Búsquedas:
+
+    Búsqueda de Libros:
+        Validación: Se implementa la búsqueda insensible a mayúsculas y minúsculas para mejorar la experiencia del usuario.

@@ -1,0 +1,4 @@
+Un informe detallado de cualquier problema que hayan enfrentado durante el desarrollo de la aplicación y cómo los resolvieron.
+
+El problema que me llevo un poco más de tiempo fue el de la validación del DNI.
+Para resolverlo busqué en google (stackoverflow) cómo validar un string, vi que utilizaban RegEx y le pregunté al chatgpt como usar regex para hacer una validación de 8 digitos.

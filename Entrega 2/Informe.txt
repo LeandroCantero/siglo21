@@ -1,0 +1,7 @@
+Un informe detallado de cualquier problema que hayan enfrentado durante el desarrollo de la aplicación y cómo los resolvieron.
+
+Fecha Límite de Devolución:
+    Problema: Necesidad de establecer una fecha límite al alquilar un libro.
+    Solución: Busqué como añadir días al tipo de dato Date y le sumé esos días al día que alquila. 
+    Cree una nueva clase (Alquiler) para gestionar la información relacionada con la fecha de alquiler y la fecha límite de devolución. Le puse un plazo de días (en este caso 14) y se los convierte a milisegundos para sumarlo al tipo de dato Date ya que "getTime() devuelve el tiempo en milisegundos"
+

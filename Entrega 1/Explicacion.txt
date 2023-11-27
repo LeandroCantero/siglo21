@@ -1,0 +1,31 @@
+Documento de texto explicando la lógica utilizada para validar los datos y cómo se implementaron las diferentes funcionalidades.
+
+Explicacion de las validaciones:
+
+Función "validarNombreApellido":
+Utilizo un condicional que "pregunta" si el string está vacío o no. La función "trim" elimina espacios en blanco.
+Si está vacio el string, lanzo una "IllegalArgumentException". Este tipo de excepciones se lanzan cuando se pasa un valor no válido a un método.
+
+Función "validarDNI":
+También utilizo un condicional que "pregunta" si la cantidad de numeros del String dni es = 8. Sino lanza una exepcion.
+\\d{8} busca una secuencia de ocho dígitos consecutivos en una cadena. 
+.matches() se utiliza para verificar si una cadena completa coincide con una expresión regular. En este caso verifica si coincide con un número de 8 digitos.
+! es un not.
+
+Función "validrFechaNacimiento":
+Utilizo simpledateformat para formatear la fecha. 
+Sdf.setLenient(false) es para que sea estricto el formato, sólo se acepta el formato "dd/mm/yyyy", si hay un error cómo por ejemplo poner un día 32, o un mes 13, lanza un error.
+Luego uso la función parse dentro el try, la cual convierte el String en objeto Date.
+Si hay un error dentro del try, lanza la excepción en el catch.
+
+
+En la función Main uso el scanner y el switch para hacer el menú interactivo.
+
+mostarMenu() simplemente imprime por pantalla el menú.
+agregarPersonas() va pidiendo el ingreso de nombre, apellido, etc, por pantalla, al completar los datos, llama a las funciones de validación previamente explicadas. Si ninguna lanza una excepcion, procede a agregar los datos a la lista de nombres, apellidos, etc.
+Suma 1 al entero cantidadPersonas
+Y luego imprime un mensaje de que se ha agregado correctamente.
+
+listarPersonas() imprime por pantalla la lista de personas (si es que hay personas registradas).
+utilizo el for para recorrer las listas, utilizo como "length" cantidadPersonas.
+Llamo a la funcion get para cada lista y le paso el indice del for para obtener el elemento en dicha posición.
